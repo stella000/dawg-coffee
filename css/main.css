@@ -1,1 +1,206 @@
-/* Your stylesheet goes here */
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import url('http://fonts.googleapis.com/css?family=Lato');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+
+body{
+  	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+  	font-size:16px;
+  	font-weight:300;
+   	background-color: #E9EAEE;
+}
+
+h1,h2,h3,h4,h5{;
+  font-family: "Raleway", 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1 {
+  padding-left:15px;
+  color:black;
+  text-align: left;
+}
+
+h2 {
+  color:#D87E28;
+  fill:#D87E28;
+}
+
+h4{
+  text-align: left;
+  color:#D87E28;
+  font-size: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+nav {
+  font-size:16px;
+  font-weight:300;
+  background-color: #181C22;
+  color: white;
+  position: fixed;
+  width:100%;
+}
+
+
+nav li{
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-variant: small-caps;
+  fill:#D87E28;
+}
+
+nav ul li a {
+  margin-right:.5em;
+  color: white;
+  font-variant: small-caps;
+}
+
+a:hover{
+  color:#D87E28;
+}
+
+svg{
+    height:1em;
+    color:#D87E28;
+}
+
+head nav ul li svg:hover{
+    fill:#D87E28;
+}
+
+header{
+  color:white;
+  text-align: right;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  padding-top:3em;
+}
+
+
+header p{
+  color:white;
+  display:none;
+}
+
+headline svg {
+  display:none;
+
+}
+
+headline p{
+  font-style:italic;
+  padding-left: 15px;
+}
+
+body.container.row.col-md-4 h2 svg{
+  fill:#D87E28;
+}
+
+body.container{
+  background-color: #dbdce3;
+}
+
+dd{
+  font-style: italic;
+  margin-left:1em;
+}
+
+#girl{
+  float:right;
+  max-height: 300px; 
+  margin-left: 1em; 
+  border-radius: 5px;
+}
+
+#story {
+  background-color: #dbdce3;
+  margin-top:2em;
+}
+
+.container.contact {
+  background-color: #dbdce3;
+}
+
+footer{
+  background-color:#afb3c2;
+  font-size:12px;
+  padding-top:1em;
+  border-top: 3px; 
+  border-top-style:solid;
+  border-top-color:#D87E28;
+}
+
+#title{
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  body{
+    font-size:20px;
+  }
+  nav{
+    background-color:rgba(24, 28, 34, 0.8);
+  }
+  h1{
+    color:white;
+    text-align: right;
+  }
+  h2{
+    margin:1em;
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
+  a{
+    margin-right:1em;
+  }
+
+  header{
+    background-image:url(../img/background-sm.jpg);
+    min-height:550px;
+  }
+
+  header p{
+    display:inline;
+  }
+  headline p{
+    font-size:1.25em;
+    margin-bottom:3em;
+    text-align: center;
+  }
+  headline svg{
+    display:inline;
+    fill:#D87E28;
+    position:relative;
+    left:50%;
+    height:1.5em;
+    margin-bottom:1em;
+    margin-top:3em;
+    clear:top;
+  }
+  #girl{
+    max-height:400px;
+  }
+  footer.col-md-9{
+    text-align: right;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  header{
+    background-image:url(../img/background-md.jpg);
+  }
+  h1{
+    font-size:4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header{
+    background-image:url(../img/background-lg.jpg);
+  }
+}
